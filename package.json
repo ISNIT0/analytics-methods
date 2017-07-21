@@ -1,0 +1,16 @@
+{
+  "name": "kiwix-user-statistics",
+  "version": "1.0.0",
+  "description": "We are attempting to get the following information for Kiwix Mobile (Android app): - Device Model - Android Version - Locale",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "csvtojson": "./node_modules/.bin/csvtojson kiwix_reviews.csv > kiwix_reviews.json && ./node_modules/.bin/csvtojson android_devices.csv > android_devices.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^1.11.0",
+    "csvtojson": "^1.1.7"
+  }
+}
